@@ -1,0 +1,49 @@
+.counterWrapper {
+    width: 75px;
+    align-items: center;
+    justify-items: center;
+}
+.circle{
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.circle:before,
+.circle:after{
+    content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+}
+/* PLUS */
+.circle.plus:before,
+.circle.plus:after {
+    background: #6adb00;
+}
+
+.circle.plus:before{
+    width: 2px;
+    margin: 3px auto;
+}
+
+.circle.plus:after{
+    margin: auto 3px;
+    height: 2px;
+    box-shadow: none;
+}
+
+/* MINUS */
+.circle.minus:before{
+    background: #e20101;
+    margin: auto 3px;
+    height: 2px;
+}
+
+.circle.minus {
+    border: 1px solid #e20101;
+}
+
+.circle.plus {
+    border: 1px solid #6adb00;
+}
+

@@ -1,0 +1,89 @@
+.multi-select {
+  --rmsc-main: #04246A !important;
+  --rmsc-hover: #f1f3f5 !important;
+  --rmsc-selected: #e2e6ea !important;
+  --rmsc-border: #6B7790 !important;
+  --rmsc-gray: #969696 !important;
+  --rmsc-bg: #fff !important;
+  --rmsc-p: 10px !important;
+  /* Spacing */
+  --rmsc-radius: 0 !important;
+  /* Radius */
+  --rmsc-bgOnHover: #E5E9F0 !important;
+}
+
+.dropdown-search-clear-icon {
+  stroke-width: 1;
+}
+
+.multi-select input[type="text"]:not([disabled]) {
+  color: var(--rmsc-gray);
+  font-size: 15px;
+  padding: 0 var(--rmsc-p);
+}
+
+.multi-select input[type=checkbox] {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.multi-select input[type=checkbox]+span {
+  font-size: 14px;
+}
+
+.multi-select input[type=checkbox]:focus {
+  outline: none;
+}
+
+.multi-select input[type='checkbox']:checked {
+  background-color: var(--primary-blue);
+  outline: none;
+}
+
+.multi-select .dropdown-heading {
+  cursor: pointer;
+}
+
+.multi-select .dropdown-heading-value,
+.multi-select .dropdown-content .select-item > label {
+  font-size: 15px;
+}
+
+.multi-select .dropdown-heading-value .gray {
+  font-style: italic;
+}
+
+.multi-select .dropdown-content .select-item > label {
+  font-weight: normal;
+}
+
+.multi-select .dropdown-content>ul,
+.multi-select .dropdown-content .select-item,
+.multi-select .dropdown-content .select-panel > div:first-child,
+.multi-select .dropdown-content input:focus {
+  border-color: var(--primary-blue);
+  border-style: solid;
+}
+
+.multi-select .dropdown-content ul {
+  border-width: 0 0 1px 0;
+}
+
+.multi-select .dropdown-content .select-item {
+  color: var(--primary-blue);
+  border-width: 0 1px 0 1px;
+}
+
+.multi-select .dropdown-content .select-item:hover {
+  background-color: var(--rmsc-bgOnHover);
+}
+
+/* select the container of the input focused that has no class inside the library */
+.multi-select .dropdown-content .select-panel > div:first-child {
+  border-width: 1px 1px 1px 1px;
+}
+
+.multi-select .dropdown-content input:not([type='checkbox']):focus {
+  border-width: 0;
+  box-shadow: none;
+}

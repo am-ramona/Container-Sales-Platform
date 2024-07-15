@@ -1,0 +1,82 @@
+#root {
+  /* max-width: 960px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.Collapsible {
+  width: 977px;
+  max-width: 100%;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.Collapsible__contentInner {
+  border-top: 0;
+}
+
+.Collapsible__contentInner p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.Collapsible__contentInner p:last-child {
+  margin-bottom: 0;
+}
+
+.Collapsible__trigger {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+  position: relative;
+  padding: 10px 25px;
+  background: #313E5B;
+  color: white;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.Collapsible__trigger:after {
+  display: block;
+  content: '';
+  background: url('../../../assets/icones/arrow.svg') #304D7B;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  top: 0;
+  right: 14px;
+  bottom: 0;
+  margin: auto;
+  transition: transform 300ms;
+}
+
+.Collapsible__trigger.is-open:after {
+  transform: rotate(180deg) translate(0);
+}
+
+.Collapsible__trigger.is-disabled {
+  opacity: 0.5;
+  background-color: grey;
+}
+
+.CustomTriggerCSS {
+  background-color: lightcoral;
+  transition: background-color 200ms ease;
+}
+
+.CustomTriggerCSS--open {
+  background-color: darkslateblue;
+}
+
+.Collapsible__custom-sibling {
+  padding: 5px;
+  font-size: 12px;
+  background-color: #CBB700;
+  color: black;
+}

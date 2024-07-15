@@ -1,0 +1,46 @@
+.Collapsible__trigger {
+    display: block;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: -0.26px;
+    text-decoration: none;
+    position: relative;
+    outline-width: 0;
+    /* padding-top: 12px; */
+    /* padding-bottom: 12px; */
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.Collapsible__trigger:focus-visible {
+    outline-width: 1px;
+}
+
+.Collapsible__trigger:after {
+    min-height: 40px;
+    content: "\203A";
+    transform: rotateZ(90deg);
+    font-size: x-large;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+    display: block;
+    transition: transform 300ms;
+}
+
+.Collapsible__trigger.is-open {
+    margin-bottom: 6px;
+    /* background-color: #e5e9f0; */
+}
+
+.Collapsible__trigger.is-open:after {
+    transform: rotateZ(270deg);
+}
+
+.Collapsible__trigger.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+}
